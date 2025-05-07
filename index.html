@@ -725,8 +725,13 @@
                         <h1>Anandha Krishnan S</h1>
                         <h2>Integrated Master of Computer Applications (IMCA) Student</h2>
                         <div class="contact-links">
-                            <a href="anandhusasikumar2003@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                            <a href="+918714722007"><i class="fas fa-phone"></i> Phone</a>
+                            <!-- href="anandhusasikumar2003@gmail.com" -->
+                            <a onclick="alertMessage('email')">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                            <a onclick="alertMessage('phone')">
+                                <i class="fas fa-phone"></i> Phone
+                            </a>
                             <a href="https://www.linkedin.com/in/anandha-krishnan-7a8444246/"><i class="fab fa-linkedin"></i> LinkedIn</a>
                             <a href="https://github.com/AnandhaKrishnan7"><i class="fab fa-github"></i> GitHub</a>
                       <!--  </div>
@@ -1260,6 +1265,16 @@
         
         // Call the function when the page has loaded
         window.addEventListener('load', observeElements);
+
+        const alertMessage = (type) => {
+            if (type === 'email') {
+              alert("mail to: anandhusasikumar2003@gmail.com");
+            } else if (type === 'phone') {
+              alert("call : +91 8714722007");
+            } else {
+              alert("Unknown action");
+            }
+          }
     </script>
 </body>
 </html>
